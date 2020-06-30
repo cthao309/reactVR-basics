@@ -4,7 +4,7 @@ import { AppRegistry, asset, Pano, View, Text } from 'react-vr';
 class Task extends Component {
   render() {
     return (
-      <Text style={{textAlign: 'center', fontSize: .2}}>Too: Get groceries.</Text>
+      <Text style={{textAlign: 'center', fontSize: 0.2}}>Too: Get groceries.</Text>
     )
   }
 }
@@ -18,12 +18,13 @@ export default class Basics extends Component {
         <view
           style={{
             transform: [{translate: [0, 0, -3]}],
-            layoutOrigin: [.5, .5]
+            layoutOrigin: [0.5, 0.5]
           }}
         >
           <Task />
           <Task />
           <Task />
+          <Text style={{textAlign: 'center', fontSize: 0.2}}>Too: Get groceries.</Text>
         </view>
       </View>
     )
